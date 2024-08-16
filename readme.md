@@ -1,2 +1,2 @@
 # GMTK 2024
-## Theme: TBA
+## Theme: Built to scale :hammer_and_wrench:
