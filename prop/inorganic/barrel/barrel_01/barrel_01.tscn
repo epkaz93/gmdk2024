@@ -1,18 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://1gyo6h4mcxan"]
 
 [ext_resource type="PackedScene" uid="uid://dcfwayy3xs02" path="res://prop/inorganic/barrel/barrel_01/source/barrel_01_fractured.tscn" id="1_bgy0q"]
-[ext_resource type="Script" path="res://prop/inorganic/barrel/barrel_01/barrel_01.gd" id="1_u8b2e"]
+[ext_resource type="Script" path="res://addons/destructable/DestructableRigidBody3D.gd" id="1_cn2d5"]
 [ext_resource type="PackedScene" uid="uid://db6gcqfope1vt" path="res://prop/inorganic/barrel/barrel_01/source/barrel_01_whole.tscn" id="2_rbuon"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_2xf3a"]
 height = 0.868892
 radius = 0.29061
 
-[node name="barrel_01" type="RigidBody3D"]
+[node name="barrel_01" type="RigidBody3D" node_paths=PackedStringArray("untarnished_node")]
 mass = 120.0
-script = ExtResource("1_u8b2e")
-destroyed_scene = ExtResource("1_bgy0q")
-strength = 20.0
+script = ExtResource("1_cn2d5")
+untarnished_node = NodePath("pivot/barrel_01_whole")
+fragments_scene = ExtResource("1_bgy0q")
+break_force = 20.0
 
 [node name="pivot" type="Node3D" parent="."]
 
@@ -20,5 +21,3 @@ strength = 20.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CylinderShape3D_2xf3a")
-
-[connection signal="destroyed" from="." to="." method="_destroy"]

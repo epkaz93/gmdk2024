@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://d3q4d4o6nft1t"]
+[gd_scene load_steps=11 format=3 uid="uid://d3q4d4o6nft1t"]
 
 [ext_resource type="Material" uid="uid://nmvrih74prks" path="res://level/default_sky.tres" id="1_ihtu2"]
 [ext_resource type="PackedScene" uid="uid://1gyo6h4mcxan" path="res://prop/inorganic/barrel/barrel_01/barrel_01.tscn" id="2_3ffad"]
+[ext_resource type="PackedScene" uid="uid://ba11jwvxkrvrh" path="res://prop/inorganic/rock/rock_collection_01/rock_01.tscn" id="3_qbyk1"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_cjovy"]
 data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
@@ -93,3 +94,6 @@ transform = Transform3D(-0.109856, -0.817129, 0.565891, 0, 0.569337, 0.822104, -
 
 [node name="barrel_04" parent="." instance=ExtResource("2_3ffad")]
 transform = Transform3D(-0.937148, 0.286858, -0.19866, -3.27396e-09, 0.569337, 0.822104, 0.348932, 0.770434, -0.533553, -0.960609, 24.5349, 2.40595)
+
+[node name="rock_01" parent="." instance=ExtResource("3_qbyk1")]
+transform = Transform3D(1, 0, 0, 0, 0.783975, 0.620792, 0, -0.620792, 0.783975, 0, 7.26936, 4.93418)
