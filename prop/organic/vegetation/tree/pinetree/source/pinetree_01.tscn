@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ql6w5cqrkv5f"]
+
+[ext_resource type="PackedScene" uid="uid://dm2hl62c1ja43" path="res://prop/organic/vegetation/tree/pinetree/source/pinetree_01.glb" id="1_wtgj8"]
+
+[node name="pinetree_01" instance=ExtResource("1_wtgj8")]
