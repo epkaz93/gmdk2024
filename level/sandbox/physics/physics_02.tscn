@@ -41,63 +41,48 @@ shape = SubResource("ConcavePolygonShape3D_ifg6o")
 
 [node name="barrel_01" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.428335, 0)
-despawn_untarnished_delay = null
 
 [node name="barrel_02" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.428335, 0.620125)
-despawn_untarnished_delay = null
 
 [node name="barrel_03" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.428335, -0.606616)
-despawn_untarnished_delay = null
 
 [node name="barrel_04" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.428335, -1.20596)
-despawn_untarnished_delay = null
 
 [node name="barrel_05" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.428335, 1.23833)
-despawn_untarnished_delay = null
 
 [node name="barrel_06" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32118, 0.938773)
-despawn_untarnished_delay = null
 
 [node name="barrel_07" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32118, 0.287391)
-despawn_untarnished_delay = null
 
 [node name="barrel_08" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32118, -0.315391)
-despawn_untarnished_delay = null
 
 [node name="barrel_09" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32118, -0.929882)
-despawn_untarnished_delay = null
 
 [node name="barrel_10" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.20568, -0.593764)
-despawn_untarnished_delay = null
 
 [node name="barrel_11" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.20568, 0.0133482)
-despawn_untarnished_delay = null
 
 [node name="barrel_12" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.20568, 0.638427)
-despawn_untarnished_delay = null
 
 [node name="barrel_13" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.07107, 0.31294)
-despawn_untarnished_delay = null
 
 [node name="barrel_14" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.07107, -0.311133)
-despawn_untarnished_delay = null
 
 [node name="barrel_15" parent="pyramid" instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.97639, 0.0347956)
-despawn_untarnished_delay = null
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.465183, -0.188331, 0.864949, 0.0204112, 0.979129, 0.202215, -0.884979, -0.0764121, 0.459318, 4.87664, 3.27989, 2.19717)
@@ -111,16 +96,12 @@ environment = SubResource("Environment_gu8nb")
 
 [node name="barrel_01" parent="." instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.2598, 0)
-despawn_untarnished_delay = null
 
 [node name="barrel_02" parent="." instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 0.97968, -0.200565, 0, 0.200565, 0.97968, 0, 31.092, 1.13382)
-despawn_untarnished_delay = null
 
 [node name="barrel_03" parent="." instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 0.818972, 0.573834, 0, -0.573834, 0.818972, 0, 33.0964, -1.12857)
-despawn_untarnished_delay = null
 
 [node name="barrel_04" parent="." instance=ExtResource("1_h0pe7")]
 transform = Transform3D(1, 0, 0, 0, 0.949546, 0.313628, 0, -0.313628, 0.949546, 0, 58.2828, 0.224077)
-despawn_untarnished_delay = null

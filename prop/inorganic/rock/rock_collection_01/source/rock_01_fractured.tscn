@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://ewvc8xl8pa2n"]
+
+[ext_resource type="PackedScene" uid="uid://b20ct1ivbt532" path="res://prop/inorganic/rock/rock_collection_01/source/rock_01_fractured.glb" id="1_rndad"]
+[ext_resource type="Material" uid="uid://ck6o5x48byg5x" path="res://prop/inorganic/rock/rock_collection_01/rock_collection_01.tres" id="2_dpctw"]
+
+[node name="rock_01_fractured" instance=ExtResource("1_rndad")]
+
+[node name="rock_01_cell-rigid" parent="rock_01_cell-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_001-rigid" parent="rock_01_cell_001-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_004-rigid" parent="rock_01_cell_004-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_005-rigid" parent="rock_01_cell_005-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_006-rigid" parent="rock_01_cell_006-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_008-rigid" parent="rock_01_cell_008-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_009-rigid" parent="rock_01_cell_009-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")
+
+[node name="rock_01_cell_012-rigid" parent="rock_01_cell_012-rigid" index="0"]
+surface_material_override/0 = ExtResource("2_dpctw")

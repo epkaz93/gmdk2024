@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ylkw4627cydc"]
+
+[ext_resource type="PackedScene" uid="uid://b1l51nvckqda1" path="res://prop/inorganic/rock/rock_collection_01/source/rock_02_fractured.glb" id="1_6ig55"]
+
+[node name="rock_02_fractured" instance=ExtResource("1_6ig55")]

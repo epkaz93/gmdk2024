@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba11jwvxkrvrh"]
+
+[ext_resource type="Script" path="res://addons/destructable/DestructableRigidBody3D.gd" id="1_dfh5n"]
+[ext_resource type="PackedScene" uid="uid://cunrrm81s0crk" path="res://prop/inorganic/rock/rock_collection_01/source/rock_01_whole.tscn" id="1_mmrq3"]
+[ext_resource type="PackedScene" uid="uid://ewvc8xl8pa2n" path="res://prop/inorganic/rock/rock_collection_01/source/rock_01_fractured.tscn" id="2_n35gm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n2npa"]
+size = Vector3(0.189844, 0.0540192, 0.152744)
+
+[node name="rock_01" type="RigidBody3D" node_paths=PackedStringArray("untarnished_node")]
+mass = 5.0
+continuous_cd = true
+script = ExtResource("1_dfh5n")
+untarnished_node = NodePath("pivot/rock_01_whole")
+fragments_scene = ExtResource("2_n35gm")
+break_force = 0.5
+
+[node name="pivot" type="Node3D" parent="."]
+
+[node name="rock_01_whole" parent="pivot" instance=ExtResource("1_mmrq3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.930366, 0, 0.366631, 0, 1, 0, -0.366631, 0, 0.930366, 0.00261713, -0.000202948, -0.0106433)
+shape = SubResource("BoxShape3D_n2npa")
