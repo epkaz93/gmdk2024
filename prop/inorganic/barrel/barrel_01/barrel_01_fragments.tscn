@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b72ok3m6i5vnw"]
+
+[ext_resource type="PackedScene" uid="uid://dufepjs2gbro2" path="res://prop/inorganic/barrel/barrel_01/barrel_01_fragments.glb" id="1_u0onp"]
+
+[node name="barrel_01" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.865, 0)
+gi_mode = 2
+
+[node name="pivot" type="Node3D" parent="."]
+
+[node name="barrel_01_fragments" parent="pivot" instance=ExtResource("1_u0onp")]
