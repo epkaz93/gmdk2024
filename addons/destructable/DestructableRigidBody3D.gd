@@ -91,7 +91,6 @@ func set_destroyed() -> void:
 
 
 func remove_untarnished() -> void:
-	remove_child(untarnished_node)
 	for node in find_children("*", "CollisionShape3D", false):
 		node.disabled = true
 	untarnished_node.queue_free()
@@ -103,8 +102,6 @@ func _on_destroyed() -> void:
 		timer.timeout.connect(remove_untarnished)
 	else:
 		remove_untarnished()
-	
-	
 	fragments_node = fragments_scene.instantiate()
 	add_child(fragments_node)
 	for child in fragments_node.find_children("*", "RigidBody3D"):
