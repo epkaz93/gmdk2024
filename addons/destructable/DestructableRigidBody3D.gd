@@ -29,8 +29,12 @@ var initial_child_angular_velocity: Vector3 = Vector3.ZERO
 ## Force required to break the object (in Newtons).
 @export var break_force: float = 10.0
 
-@export_group("Physics Fixes")
+@export_group("Untarnished")
+@export var despawn_untarnished_delay: float = 0.015
+
+@export_group("Fragments")
 @export var destroy_timeout: float = 0.02
+
 
 signal destroyed
 
@@ -49,6 +53,8 @@ func _init() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if is_destroyed:
+		linear_velocity = initial_child_linear_velocity
 	var collision = move_and_collide(delta * linear_velocity, true, 0.001, false, 5)
 	if collision and not is_destroyed:
 		
@@ -84,13 +90,23 @@ func set_destroyed() -> void:
 		destroyed.emit()
 
 
-func _on_destroyed() -> void:
+func remove_untarnished() -> void:
 	remove_child(untarnished_node)
 	for node in find_children("*", "CollisionShape3D", false):
 		node.disabled = true
 	untarnished_node.queue_free()
+
+func _on_destroyed() -> void:
+	#untarnished_node.visible = false
+	if despawn_untarnished_delay:
+		var timer: SceneTreeTimer = get_tree().create_timer(despawn_untarnished_delay)
+		timer.timeout.connect(remove_untarnished)
+	else:
+		remove_untarnished()
+	
+	
 	fragments_node = fragments_scene.instantiate()
 	add_child(fragments_node)
 	for child in fragments_node.find_children("*", "RigidBody3D"):
-		child.linear_velocity = initial_child_linear_velocity
-		child.angular_velocity = initial_child_angular_velocity
+		child.linear_velocity = linear_velocity
+		child.angular_velocity = linear_velocity
