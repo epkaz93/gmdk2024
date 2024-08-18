@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dba2m1t8mch4a"
-path="res://.godot/imported/barrel_01.glb-499ef3ba9e5e9d79c8ef4ca500a10357.scn"
+uid="uid://18fgfnn6ixgs"
+path="res://.godot/imported/barrel_01_whole.glb-86df38d5a15cc7da51b46a7994904261.scn"
 
 [deps]
 
-source_file="res://prop/inorganic/barrel/barrel_01/barrel_01.glb"
-dest_files=["res://.godot/imported/barrel_01.glb-499ef3ba9e5e9d79c8ef4ca500a10357.scn"]
+source_file="res://prop/inorganic/barrel/barrel_01/source/barrel_01_whole.glb"
+dest_files=["res://.godot/imported/barrel_01_whole.glb-86df38d5a15cc7da51b46a7994904261.scn"]
 
 [params]
 
@@ -31,6 +31,17 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"barrel_01_alt": {
+"use_external/enabled": true,
+"use_external/path": "res://prop/inorganic/barrel/barrel_01/barrel_01_alt.tres"
+},
+"barrel_01_main": {
+"use_external/enabled": true,
+"use_external/path": "res://prop/inorganic/barrel/barrel_01/barrel_01_main.tres"
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1
