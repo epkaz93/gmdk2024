@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcfwayy3xs02"]
+
+[ext_resource type="PackedScene" uid="uid://tkyrwgcm0wac" path="res://prop/inorganic/barrel/barrel_01/source/barrel_01_fractured.glb" id="1_8ilot"]
+
+[node name="barrel_01_fractured" instance=ExtResource("1_8ilot")]

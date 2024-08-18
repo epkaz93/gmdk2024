@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dufepjs2gbro2"
-path="res://.godot/imported/barrel_01_fragments.glb-2b3bb21acd54bcced9efea45a67bbb1e.scn"
+uid="uid://tkyrwgcm0wac"
+path="res://.godot/imported/barrel_01_fractured.glb-975b8d505f7575024f248a63973b967b.scn"
 
 [deps]
 
-source_file="res://prop/inorganic/barrel/barrel_01/barrel_01_fragments.glb"
-dest_files=["res://.godot/imported/barrel_01_fragments.glb-2b3bb21acd54bcced9efea45a67bbb1e.scn"]
+source_file="res://prop/inorganic/barrel/barrel_01/source/barrel_01_fractured.glb"
+dest_files=["res://.godot/imported/barrel_01_fractured.glb-975b8d505f7575024f248a63973b967b.scn"]
 
 [params]
 
@@ -19,7 +19,7 @@ nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
 meshes/ensure_tangents=true
-meshes/generate_lods=false
+meshes/generate_lods=true
 meshes/create_shadow_meshes=true
 meshes/light_baking=1
 meshes/lightmap_texel_size=0.2
@@ -31,6 +31,13 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"barrel_01_main": {
+"use_external/enabled": true,
+"use_external/path": "res://prop/inorganic/barrel/barrel_01/barrel_01_main.tres"
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1
