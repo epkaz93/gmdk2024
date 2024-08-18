@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://pyhcyjlyjgwh"]
+
+[resource]
+resource_name = "barrel_01_alt"
+cull_mode = 2
+albedo_color = Color(0.438908, 0.438908, 0.438908, 1)
+metallic = 1.0
+roughness = 0.5
